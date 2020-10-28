@@ -10,4 +10,4 @@
 
 Диаграмма прецедентов:
 
-![Рисунок](https://github.com/BorisSilav/proektirovanie/blob/main/Лабораторная%201/use_case_diagram.png)
+![Рисунок](https://github.com/BorisSilav/proektirovanie/blob/main/Лабораторная%201/Use_case_diagram.png)
