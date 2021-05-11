@@ -1,1 +1,30 @@
+@startuml
+left to right direction
 
+actor "Управляющий_предприятием"
+actor "Директор_предприятия"
+
+usecase case1 as "Правила выполнения операций"
+
+usecase case2 as "Анализировать работу предприятия"
+
+usecase case3 as "Принятие заказов от клиентов"
+
+usecase case6 as "Составление заявки поставщику сырья"
+
+usecase case7 as "Внесение заказа в ИС"
+
+usecase case8 as "Управление заказами"
+
+usecase case9 as "Управление предприятием"
+
+
+Управляющий_предприятием --> case8
+case8 --> case3
+case8 --> case6
+case8 --> case7 
+
+Директор_предприятия --> case9
+case9 --> case1
+case9 --> case2
+@enduml
