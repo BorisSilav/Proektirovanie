@@ -1,0 +1,51 @@
+@startuml
+skinparam actor {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam boundary {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam entity {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam database {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+ 
+skinparam component {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam sequence {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+LifeLineBorderColor Black
+}
+
+actor "Управляющий предприятием" as user
+boundary "Приложение" as app
+database "БД" as database
+
+
+user -> app : Внести заказ 
+app -> app : Проверка корректности заказа
+user -> app : Внести ассортимент продукции
+user -> app : Внести информацию о запасах продукции
+app -> database : Запись информации
+app <- database : Получение актуальной информации
+user <- app : Получение обновленной информации
+@enduml
